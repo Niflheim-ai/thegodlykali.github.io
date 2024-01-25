@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #212935;
+    height: 100%;
+}
+
+.blob {
+    height: 50%;
+}
+
+i {
+    color: #74C0FC;
+}
+
+.fa-facebook:hover {
+    color: #35a1f3;
+}
+
+.fa-discord:hover {
+    color: #59595a;
+}
+
+.fa-github:hover {
+    color: #070707cb;
+}
