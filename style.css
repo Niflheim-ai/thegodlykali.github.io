@@ -10,6 +10,30 @@ body {
     height: 100%;
 }
 
+/* =================================
+            Scroll Bar
+==================================== */
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 15, 15, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* =================================
+                Top
+==================================== */
+
 .blob {
     height: 50%;
 }
@@ -30,9 +54,9 @@ i {
     color: #070707cb;
 }
 
-/* ======================
-        Animations
-   ====================== */
+/* =================================
+              Animations
+==================================== */
 @keyframes profileSlideFade {
     0% {
         transform: translateY(-50%);
@@ -142,7 +166,11 @@ i {
     opacity: 1;
 }
 
-.c-icon, .java-icon, .php-icon, .js-icon, .lua-icon, .py-icon {
+/* =================================
+        Programming Langauges
+==================================== */
+
+.c-icon, .java-icon, .php-icon, .js-icon, .lua-icon, .py-icon, .sql-icon {
     position: relative;
     width: 40px;
     height: 40px;
@@ -152,5 +180,32 @@ i {
 }
 
 .lang {
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    /* outline: 3px solid red; */
+    height: 100%;
+}
+
+/* =================================
+               Projects
+==================================== */
+
+.project-container {
+    width: 100%;
+    height: auto;
+}
+
+.card-body, .card {
+    box-shadow: 10px 15px 24px 3px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 10px 15px 24px 3px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 15px 24px 3px rgba(0,0,0,0.33);
+}
+
+.card {
+    background-image: radial-gradient(#383838, #151515);
+}
+
+.card-body {
+    background-color: #fff;
 }
