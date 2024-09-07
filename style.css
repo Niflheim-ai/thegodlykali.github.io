@@ -54,6 +54,15 @@ i {
     color: #070707cb;
 }
 
+.contact-me {
+    margin-top: 5%;
+}
+
+.contact-me:hover {
+    background-color: rgb(23, 162, 184);
+    color: white;
+}
+
 /* =================================
               Animations
 ==================================== */
@@ -127,7 +136,7 @@ i {
     height: 100px;
     background-image: url(Images/html-icon.png);
     background-repeat: no-repeat;
-    animation: float 6s ease-in-out infinite, fadeIn 4s ease-in-out 1;;
+    animation: float 6s ease-in-out infinite, fadeIn 4s ease-in-out 1;
     
 }
 
@@ -206,6 +215,15 @@ i {
     background-image: radial-gradient(#383838, #151515);
 }
 
+.bg-image {
+    display: flex;
+    justify-content: center;
+}
+
 .card-body {
     background-color: #fff;
+}
+
+p.grms {
+    font-size: 1.40rem;
 }
