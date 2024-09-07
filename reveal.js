@@ -26,3 +26,18 @@ window.addEventListener("scroll", throttleScroll);
 
 // To check the scroll position on page load
 reveal();
+
+function displayModal() {
+    // Get the modal element
+    var myModal = new bootstrap.Modal(document.getElementById('disclaimerModal'), {});
+
+    // Toggle the modal
+    myModal.toggle();
+    
+    document.getElementById("closeButton").addEventListener("click", function() {
+        var myModal = bootstrap.Modal.getInstance(document.getElementById('disclaimerModal'));
+        myModal.hide();
+    });
+}
+
+displayModal();
